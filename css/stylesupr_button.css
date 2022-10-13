@@ -1,0 +1,51 @@
+body {
+	background-color: black;
+	text-align: center;
+}
+
+h1 {
+	color: red;
+	font-family: verdana;
+	font-size: 2em;
+}
+
+div {
+	border: 2px solid red;
+	border-radius: 26px;
+	width: 30%;
+	margin-left: 35%;
+	margin-right:45%;
+	padding: 8px;
+}
+
+button {
+	color: red;
+	width: 200px;
+	border-style: double;
+	border-color: red;
+	border-width: 7px;
+	border-radius: 26px;
+	background-color: black;
+	padding: 15px 32px;
+	margin-top: 3px;
+	transition: all 0.5s;
+  	cursor: pointer;
+}
+
+button:hover {
+	color: white;
+	background-color: red;
+	border: 2px solid grey;
+	transition: all 0.5s;
+  	cursor: pointer;
+}
+
+input {
+	width: 200px	;
+	border: 2px solid red;
+	border-radius: 26px;
+	background-color: black;
+	padding: 15px 32px;
+	margin-top: 3px;
+	color: red;
+}
