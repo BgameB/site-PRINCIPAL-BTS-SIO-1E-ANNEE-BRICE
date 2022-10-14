@@ -1,5 +1,5 @@
 body {
-	background-color: green;
+	background-color: black;
 	text-align: center;
 }
 
@@ -33,7 +33,7 @@ button {
 }
 
 button:hover {
-	color: red;
+	color: white;
 	background-color: green;
 	border: 2px solid grey;
 	transition: all 0.5s;
