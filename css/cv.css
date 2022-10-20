@@ -43,7 +43,10 @@ p.pt {
 
 label {
 	font-family: Trebuchet MS;
+}
 
+td.gt {
+  padding-right: 78px;
 }
 
 div.progressbarbase {
