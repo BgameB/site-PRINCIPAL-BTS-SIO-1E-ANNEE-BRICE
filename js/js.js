@@ -29,8 +29,8 @@ function test_age(){
 }
 
 function simple_affichage(){
-    let name = prompt('Donner votre prenom')
-    let familyName = prompt('Donner votre nom')
+    let name = prompt('Donner votre Prénom')
+    let familyName = prompt('Donner votre Nom')
 
     document.write('<div style="margin:auto; width:300px; border:2px solid blue; ">')
     document.write(`Bonjour ${name} ${familyName}`)
