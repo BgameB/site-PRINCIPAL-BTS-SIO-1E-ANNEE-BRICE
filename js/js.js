@@ -211,7 +211,7 @@ function bonus(){
     }
     while(next != "STOP");
     document.write(c);
-    document.write(" TOTAL FINAL : "+totalf);
+    document.write(" TOTAL FINAL : "+totalf+"€");
 
 
 }
