@@ -193,8 +193,7 @@ function swich() {
 function bonus(){
 
     var totalf = 0
-    var total = 0
-    var liste = 0
+    var total = ""
     var c = ""
     do{
         var article = prompt("Votre article")
@@ -203,7 +202,7 @@ function bonus(){
 
         alert(`Vos ${article} couterons ${price * quantity} €`)
         total = Number(price)*Number(quantity) 
-        totalf += Number(price)*Number(quantity) 
+        totalf += total 
         c += ("Article : " +article+" <br> PRIX : "+price +"€"+ " <br> Quantité : "+quantity+ " <br> Total : "+total+"€"+"<br><br><br>")
         alert('Vos articles additionnés courterons ' + totalf + "€")
 
