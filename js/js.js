@@ -204,7 +204,7 @@ function bonus(){
         alert(`Vos ${article} couterons ${price * quantity} €`)
         total = Number(price)*Number(quantity) 
         totalf += Number(price)*Number(quantity) 
-        c += ("Articles : " +article+" <br> PRIX : "+price + " <br> Quantité : "+quantity+ " <br> Total : "+total+"<br><br><br>")
+        c += ("Article : " +article+" <br> PRIX : "+price +"€"+ " <br> Quantité : "+quantity+ " <br> Total : "+total+"€"+"<br><br><br>")
         alert('Vos articles additionnés courterons ' + totalf + "€")
 
         next = prompt("Voulez vous continuer (OUI/STOP) ?")
