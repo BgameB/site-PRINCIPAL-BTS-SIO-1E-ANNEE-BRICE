@@ -166,7 +166,7 @@ function cdc() {
     var chaine = prompt("Donnez un mot");
     document.write(chaine.toUpperCase()+"<br>");
     document.write(chaine.toLowerCase()+"<br>");
-    document.write("a chaine contient    " + chaine.length+"    caractères    " + "<br>");
+    document.write("la chaine contient    " + chaine.length+"    caractères    " + "<br>");
     document.write("la première lettre est   " + chaine.substr(0,1)+ "<br>");
 }
 
