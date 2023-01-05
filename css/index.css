@@ -96,12 +96,12 @@ nav li:hover .submenu{
 	background-color: RGBa(000, 112, 192, 0.15); 
 }
 
-.menu-css:hover{
+.menu-js:hover{
 	border-top: 5px solid #e44d26;
 	background-color: RGBa(228, 77, 38, 0.15);
 }
 
-.menu-js:hover{
+.menu-bdd:hover{
 	border-top: 5px solid #f1dc4f;
 	background-color: RGBa(241, 211, 79, 0.15);
 }
@@ -128,11 +128,11 @@ nav > ul > li:hover a{
 	background-color: RGBa(000, 160, 240);
 }
 
-.menu-css .submenu{
+.menu-js .submenu{
 	background-color: RGBa(255,0,0)	;
 }
 
-.menu-js .submenu{
+.menu-bdd .submenu{
 	background-color: RGBa(251, 216, 99);
 }
 
@@ -145,11 +145,11 @@ nav > ul > li:hover a{
 	background-color: RGB(000, 115, 200);
 }
 
-.menu-css .submenu li:hover{
+.menu-js .submenu li:hover{
 	background-color: RGB(255, 102, 102);
 }
 
-.menu-js .submenu li:hover{
+.menu-bdd .submenu li:hover{
 	background-color: RGB(200, 165, 75);
 }
 
