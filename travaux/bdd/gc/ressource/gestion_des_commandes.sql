@@ -51,6 +51,7 @@ CREATE TABLE IF NOT EXISTS `clients` (
   `client_dep` int(11) NOT NULL,
   `client_ville` varchar(20) NOT NULL,
   `client_tel` int(11) NOT NULL,
+  `date_naissance` date NOT NULL,
   PRIMARY KEY (`client_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
