@@ -53,13 +53,7 @@ img.ph{
     border: 3px solid #f3eb00 ;
 }
 
-@media screen and (max-width: 600px) {
-    img.ph{
-        display: none;
-    }
 
-    
-}
 /* fin */
 
 iframe.icont{
@@ -71,6 +65,8 @@ iframe.icont{
     margin: 5px;
 
 }
+
+
 /* pied de page */
 footer{
     text-align: center;
@@ -141,7 +137,7 @@ div#menu ul ul{
 div#menu ul ul{
     position: absolute;
     top: 0;
-    left: 100px;
+    left: 113px;
     display: none;
 
 }
@@ -174,8 +170,8 @@ div#menu ul li.style,div#menu li.sousmenu{
     text-shadow: 1px 1px 1px #8ba915, 0 0 1px yellow, 0 0 1px yellow;
     user-select: none;
     transition: 0.1s;
-    width: 70%;
-    margin: 0px 100px 0px 0px  ;
+    width: 100%;
+    margin: 0px 100px 0px 15%  ;
 }
 
 div#menu ul li.style:hover,div#menu li.sousmenu:hover{
@@ -193,3 +189,35 @@ div#menu ul ul ul li:hover{
     border-left-color: #403f11;
 }
 /* fin du style des boutons  */
+/* Pour rendre le site responsif (un minimum, je commence dedans, j'ai essayé*/
+
+
+@media screen and (max-width: 800px) {
+    div#menu ul li.style,div#menu li.sousmenu{
+        font-size: 40%;
+        width: 40%;
+    }
+    
+    div#menu ul ul{
+        position: absolute;
+        top: 0;
+        left: 53px;
+        display: none;
+    
+    }
+
+    
+}
+
+@media screen and (max-width: 600px) {
+    img.ph{
+        display: none;
+    }
+    
+    iframe.icont{
+        width: 100%;
+    }
+    
+    
+}
+
