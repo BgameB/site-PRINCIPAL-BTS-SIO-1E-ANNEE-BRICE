@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- le meta charget utf 8 permet l'encodage des caractère spéciaux -->
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>PPE1</title>
+</head>
+<body>
+    <!-- création de la bannière avec une un header -->
+    <header>
+
+        <p> Portfolio MISSION 1 24/01/2023</p>
+
+
+    </header>
+    <!-- div qui va contenir les deux div menu et l'accueil -->
+    <div class="cont">
+        
+            
+        
+    <!-- le menu avec les boutons -->
+        <div class="cont1">
+            
+            
+            <!-- <button onclick="window.open('tab2.html','f1');">
+                Second  Tableau     </button>
+               <br>
+               <button onclick="window.open('tab2.html','f4');">
+                Second  Tableau 	</button>
+               <br>
+               <button onclick="window.open('tab2.html','f4');">
+                Second  Tableau 	</button>
+               <br>
+               <button onclick="window.open('tab2.html','f4');">
+                Second  Tableau 	</button>
+               <br>
+               <button onclick="window.open('tab2.html','f4');">
+                Second  Tableau 	</button>
+               <br> -->
+               <div id="menu">
+                <!-- les boutons sont fait avec du javascript et des balises, les balises permette de faire des sous catégories, le javascript permet a la fois d'utiliser le target, et à la fois du style css, ce que ne permet pas toujours le la balise button  -->
+                <!-- le niveau 1 est juste une classe de bouton -->
+                <ul class="niveau1">
+                    <li class="style" onclick="window.open('html/acc.html','f1');">Accueil</li>
+                    <li class="style" onclick="window.open('html/acccv.html','f1');">CV</a></li>
+                    
+                    <li class="sousmenu">Projet
+                    <!-- le niveau 2 sont les sous catégorie d'un menu -->
+                    <ul class="niveau2">
+                        <li class ="sousmenu" onclick="window.open('html/accst.html','f1');">STAGE
+                                
+                    <!-- le niveau 3 sont des sous sous catégorie, le niveau 4 sous sous sous et etc... -->
+                    <ul class="niveau3">
+                        <li class="style">Stage 1</li>
+                        <li class="style">Stage 2</li>
+                        <li class="style">Stage 3</li>
+                        
+                        </li>
+                    </li>
+                    </ul>
+                        <li class="sousmenu">PPE</li>
+                        <li class="sousmenu">TP
+                     <ul class="niveau3">
+                        <li class="style">JAVASCRIPT</li>
+                        <li class="style">BDD</li>
+                        <li class="style">PHP</li>
+
+                     </ul>
+       
+                    
+                </li>
+
+                
+                    </ul>
+                    <li class="sousmenu">Veilles
+                        <!-- le niveau 2 sont les sous catégorie d'un menu -->
+                        <ul class="niveau2">
+                            <li class="sousmenu" onclick="window.open('src/vt.pdf','f1');" >Technologie</li>
+                            <li class="sousmenu" onclick="window.open('src/vj.pdf','f1');" >JURIDIQUE</li>
+                            </ul>
+                        <!-- le niveau 3 sont des sous sous catégorie, le niveau 4 sous sous sous et etc... -->
+                        
+  
+                   
+                </li>
+                    <li onclick="window.open('html/contact.html','f1');" class="sousmenu" >Contact</li>
+        
+                </li>
+                </ul>
+                </div>
+
+        </div>
+        <iframe class="icont" frameborder="0" src="html/acc.html" name="f1">
+    <!-- L'affichage où les pages demander ou l'utilisateur va cliquer-->
+        </iframe>
+
+            <img class="ph" src="img/me.jpg">
+
+    </div>
+    
+    <footer>
+<p>24/01/2023	&#169;<br> by Verger--Doucy Brice</p>
+    </footer>
+    
+</body>
+</html>

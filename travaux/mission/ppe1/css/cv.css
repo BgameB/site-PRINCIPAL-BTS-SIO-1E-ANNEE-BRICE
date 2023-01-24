@@ -1,0 +1,137 @@
+div.containerall {
+  background-color: white;
+	border: 5px solid #F7BEAC;
+	padding: 10px;
+	margin-right: 5%;
+	margin-left: 5%;
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+div.containerpack {
+	border: 3px solid grey;
+	box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+div.containerpacklast {
+	border: 3px solid grey;
+	box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+	padding: 10px;
+
+}
+
+div.container1 {
+	border: 3px solid red;
+
+}
+img {
+	max-width: 100%;
+	max-height: 100%;
+	border-radius: 3px;
+	border: 3px solid grey;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+
+p {
+	font-family: Bahnschrift SemiBold;
+}
+
+p.pt {
+	font-family: Bahnschrift;
+}
+
+label {
+	font-family: Trebuchet MS;
+
+}
+
+td.gt {
+  padding-right: 78px;
+}
+
+div.progressbarbase {
+  background-color: #dfe6e9;
+  color: white;
+  border-radius: 15px;
+  width: 90%;
+}
+
+div.progressbar1 {
+  background-color: #6AEA83;
+  color: white ;
+  font-style: bold;
+  font-family: verdana;
+  text-shadow: 1px 1px 2px #000000;
+  padding: 5px;
+  text-align: right;
+  font-size: 20px;
+  border-radius: 15px;
+  width: 99%;
+}
+
+div.progressbar2 {
+  background-color: #6EEA6A;
+  color: white ;
+  font-style: bold;
+  font-family: verdana;
+  text-shadow: 1px 1px 2px #000000;
+  padding: 5px;
+  text-align: right;
+  font-size: 20px;
+  border-radius: 15px;
+  width: 98%;
+}
+
+div.progressbar3 {
+  background-color: #AAEA6A;
+  color: white ;
+  font-style: bold;
+  font-family: verdana;
+  text-shadow: 1px 1px 2px #000000;
+  padding: 5px;
+  text-align: right;
+  font-size: 20px;
+  border-radius: 15px;
+  width: 80%;
+}
+
+div.progressbar4 {
+  background-color: #C1EA6A;
+  color: white ;
+  font-style: bold;
+  font-family: verdana;
+  text-shadow: 1px 1px 2px #000000;
+  padding: 5px;
+  text-align: right;
+  font-size: 20px;
+  border-radius: 15px;
+  width: 70%;
+}
+
+div.progressbar5 {
+  background-color: #FBD33E;
+  color: white ;
+  font-style: bold;
+  font-family: verdana;
+  text-shadow: 1px 1px 2px #000000;
+  padding: 5px;
+  text-align: right;
+  font-size: 20px;
+  border-radius: 15px;
+  width: 40%;
+}
+
+div.progressbar6 {
+  background-color: #FB6535;
+  color: white ;
+  font-style: bold;
+  font-family: verdana;
+  text-shadow: 1px 1px 2px #000000;
+  padding: 5px;
+  text-align: right;
+  font-size: 20px;
+  border-radius: 15px;
+  width: 20%;
+}
