@@ -183,10 +183,10 @@ div#menu ul li.style1:hover{
 
 div#menu ul li.style2{
     background-color: #eaf3c4;
-    border: 2px solid #8b3e1b;
+    border: 2px solid #8b8a1b;
     border-radius: 4px;
-    box-shadow: #cfcfcf 2px 2px 0 0;
-    color: #000000;
+    box-shadow: #8b8a1b 2px 2px 0 0;
+    color: #8b8a1b;
     cursor: pointer;
     display: inline-block;
     font-weight: 600;
@@ -197,13 +197,12 @@ div#menu ul li.style2{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     text-decoration: none;
-    text-shadow: 1px 1px 1px #3315a9, 0 0 1px rgb(96, 96, 81), 0 0 1px rgb(0, 255, 68);
+    text-shadow: 1px 1px 1px #8ba915, 0 0 1px yellow, 0 0 1px yellow;
     user-select: none;
     transition: 0.1s;
     width: 100%;
     margin: 0px 100px 0px 15%  ;
 }
-
 
 div#menu ul li.style2:hover{
     background-color: #e3f4a1;
@@ -211,6 +210,7 @@ div#menu ul li.style2:hover{
     box-shadow: none;
     transition: 0.3s;
 }
+
 
 div#menu ul li.style3{
     background-color: #eaf3c4;
