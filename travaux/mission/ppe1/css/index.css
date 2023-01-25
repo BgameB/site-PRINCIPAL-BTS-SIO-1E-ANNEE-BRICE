@@ -260,6 +260,9 @@ div#menu ul ul ul li:hover{
 
 
 @media screen and (max-width: 800px) {
+    div.cont{
+        height: 490px;
+    }
     div#menu ul li.style,div#menu li#sousmenu{
         font-size: 40%;
         width: 40%;
@@ -282,14 +285,9 @@ div#menu ul ul ul li:hover{
     }
     
     iframe.icont{
-        width: 100%;
-    }
-    
-    
-    
-}
+        width: 98%;
 
-@media screen and (max-width: 550px) {
+    }
     div#menu ul li.style,div#menu li#sousmenu{
         background-image: none;
         font-size: 10%;
@@ -304,8 +302,23 @@ div#menu ul ul ul li:hover{
         left: 12px;
         display: none;
     
-    }   
+    } 
     
     
     
+}
+
+@media screen and (max-width: 465px){
+    iframe.icont{
+        width: 68%;
+    }
+}
+
+@media screen and (max-width: 425px){
+    div.cont{
+        height: 513px;
+    }
+    iframe.icont{
+        width: 62%;
+    }
 }
