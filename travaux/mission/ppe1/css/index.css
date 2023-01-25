@@ -263,7 +263,7 @@ div#menu ul ul ul li:hover{
     div.cont{
         height: 800px;
     }
-    div#menu ul li.style,div#menu li#sousmenu{
+    div#menu ul li.style1,div#menu ul li.style2,div#menu ul li.style3,div#menu li#sousmenu{
         font-size: 40%;
         width: 40%;
     }
