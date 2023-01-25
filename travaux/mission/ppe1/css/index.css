@@ -142,8 +142,8 @@ div#menu ul ul{
 
 }
 /*DEBUT Permet d'afficher les menu, sous menu et sous sous menu les un a coter des autres */
-div#menu ul.niveau1 li.sousmenu:hover ul.niveau2,
-div#menu ul.niveau2 li.sousmenu:hover ul.niveau3
+div#menu ul.niveau1 li#sousmenu:hover ul.niveau2,
+div#menu ul.niveau2 li#sousmenu:hover ul.niveau3
 {
     display: block;
 
@@ -151,7 +151,7 @@ div#menu ul.niveau2 li.sousmenu:hover ul.niveau3
 /*FIN */
 
 
-div#menu ul li.style,div#menu li.sousmenu{
+div#menu ul li.style1{
     background-color: #eaf3c4;
     border: 2px solid #8b8a1b;
     border-radius: 4px;
@@ -174,7 +174,68 @@ div#menu ul li.style,div#menu li.sousmenu{
     margin: 0px 100px 0px 15%  ;
 }
 
-div#menu ul li.style:hover,div#menu li.sousmenu:hover{
+div#menu ul li.style1:hover{
+    background-color: #e3f4a1;
+    transform: translate(2px, 2px);
+    box-shadow: none;
+    transition: 0.3s;
+}
+
+div#menu ul li.style2{
+    background-color: #eaf3c4;
+    border: 2px solid #8b3e1b;
+    border-radius: 4px;
+    box-shadow: #cfcfcf 2px 2px 0 0;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 60%;
+    padding: 3px 18px;
+    line-height: 100%;
+    height: 12%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #3315a9, 0 0 1px rgb(96, 96, 81), 0 0 1px rgb(0, 255, 68);
+    user-select: none;
+    transition: 0.1s;
+    width: 100%;
+    margin: 0px 100px 0px 15%  ;
+}
+
+
+div#menu ul li.style2:hover{
+    background-color: #e3f4a1;
+    transform: translate(2px, 2px);
+    box-shadow: none;
+    transition: 0.3s;
+}
+
+div#menu ul li.style3{
+    background-color: #eaf3c4;
+    border: 2px solid #8b8a1b;
+    border-radius: 4px;
+    box-shadow: #8b8a1b 2px 2px 0 0;
+    color: #8b8a1b;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 60%;
+    padding: 3px 18px;
+    line-height: 100%;
+    height: 12%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #8ba915, 0 0 1px yellow, 0 0 1px yellow;
+    user-select: none;
+    transition: 0.1s;
+    width: 100%;
+    margin: 0px 100px 0px 15%  ;
+}
+
+div#menu ul li.style3:hover{
     background-color: #e3f4a1;
     transform: translate(2px, 2px);
     box-shadow: none;
@@ -188,6 +249,7 @@ div#menu ul ul li:hover{
 div#menu ul ul ul li:hover{
     border-left-color: #403f11;
 }
+
 /* fin du style des boutons  */
 /* Pour rendre le site responsif (un minimum, je commence dedans, j'ai essayé*/
 
