@@ -1,0 +1,53 @@
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #e22fc185;
+    text-shadow: 1px 1px 1px black, 0 0 3px pink, 0 0 2px pink;
+    margin-top: 5%;
+}
+button {
+  background-color: #f3c4e6;
+  border: 2px solid #e22fc185;
+  border-radius: 30px;
+  box-shadow: #e22fc185 4px 4px 0 0;
+  color: #e22fc185;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 27px;
+  padding: 0 18px;
+  line-height: 150px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px #e22fc2, 0 0 1px pink, 0 0 1px pink;
+  user-select: none;
+  transition: 0.1s;
+  width: 400px;
+  margin: 10px;
+  margin-top:10%
+  
+}
+
+
+button:hover {
+    background-color: #f4a1e5;
+    transform: translate(4px, 4px);
+    box-shadow: none;
+    transition: 0.3s;
+    margin-top:10%
+}
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px auto;
+    border: 1px solid #f1f1f1;
+}
+
+@media (min-width: 770px) {
+  button {
+    width: 500px;
+    padding: 0 30px;
+  }
+}
