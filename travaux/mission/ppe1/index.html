@@ -35,65 +35,54 @@
                 Second  Tableau 	</button>
         
                <br> -->
+               <!-- C'est ce qui forme le groupe, ce div permet de personnaliser tout le groupe de bouton, lui ajouter un margin ou un padding etc -->
                <div id="menu">
                 <!--Lorsqu'on veut crée un sous-menu a une puce li, attribuer la classe sousmenu a la puce li concerner et ne pas fermer la puce li
-                 derrière le texte, ensuite crée un groupe de puce ul avec la classe correspondante "niveau1""niveau2""...". Puis fermer le group ul et la puce li ouverte au début. -->
+                 derrière le texte, ensuite crée un groupe de puce ul avec la classe correspondante "niveau1""niveau2""niveau3""...". Puis fermer le group ul et la puce li ouverte au début. -->
                 <!-- les boutons sont fait avec du javascript et des balises, les balises permette de faire des sous catégories, le javascript permet a la fois d'utiliser le target, et à la fois du style css, ce que ne permet pas toujours le la balise button  -->
                 <!-- le niveau 1 est juste une classe de bouton -->
                 <ul class="niveau1">
                     <li class="style" onclick="window.open('html/acc.html','f1');">Accueil</li>
-                    <li class="sousmenu" class="style">CV+LDM
+                    <li class="sousmenu">CV+LDM
                         <ul class="niveau2">
                             <li onclick="window.open('html/acccv.html','f1');" class="style">CV</li>
                             <li onclick="window.open('src/ldm.pdf','f1');" class="style">Lettre de motivation</li>
                         </ul>
-                    
+                    </li>
                     <li class="sousmenu">Projet
                     <!-- le niveau 2 sont les sous catégorie d'un menu -->
                     <ul class="niveau2">
                         <li class ="sousmenu" onclick="window.open('html/accst.html','f1');">STAGE
-                                
+
                     <!-- le niveau 3 sont des sous sous catégorie, le niveau 4 sous sous sous et etc... -->
                     <ul class="niveau3">
                         <li class="style">Stage 1</li>
                         <li class="style">Stage 2</li>
                         <li class="style">Stage 3</li>
-                        
-                        </li>
-                    </li>
                     </ul>
-                        <li class="sousmenu">PPE
+                    </li>
+                    <li class="sousmenu">PPE
                         <ul class="niveau3">
                             <li class="sousmenu" onclick="window.open('src/ppe1.pdf','f1');">PPE1</li>
                         </ul>
                         </li>
-                        <li class="sousmenu">TP
+                    <li class="sousmenu">TP
                      <ul class="niveau3">
                         <li class="style">JAVASCRIPT</li>
                         <li class="style">BDD</li>
                         <li class="style">PHP</li>
-
-                     </ul>
-       
-                    
-                </li>
-
-                
+                    </ul>
+                    </li>
                     </ul>
                     <li class="sousmenu">Veilles
                         <!-- le niveau 2 sont les sous catégorie d'un menu -->
                         <ul class="niveau2">
                             <li class="sousmenu" onclick="window.open('src/vt.pdf','f1');" >Technologique</li>
                             <li class="sousmenu" onclick="window.open('src/vj.pdf','f1');" >Juridique</li>
-                            </ul>
+                        </ul>
                         <!-- le niveau 3 sont des sous sous catégorie, le niveau 4 sous sous sous et etc... -->
-                        
-  
-                   
-                </li>
-                    <li onclick="window.open('html/contact.html','f1');" class="sousmenu" >Contact</li>
-        
-                </li>
+                    </li>
+                    <li class="sousmenu" onclick="window.open('html/contact.html','f1');">Contact</li>
                 </ul>
                 </div>
 
