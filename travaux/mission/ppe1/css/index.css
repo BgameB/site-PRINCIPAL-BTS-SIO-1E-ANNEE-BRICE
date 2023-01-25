@@ -21,7 +21,7 @@ header{
 div.cont{
     border: 10px solid yellow;
     background-color:  #f3eb00;
-    height: 300px;
+    height: 580px;
     width: 97.3%;
     display: flex;
     margin: 5px;
@@ -261,11 +261,16 @@ div#menu ul ul ul li:hover{
 
 @media screen and (max-width: 800px) {
     div.cont{
-        height: 490px;
+        height: 800px;
     }
     div#menu ul li.style,div#menu li#sousmenu{
         font-size: 40%;
         width: 40%;
+    }
+
+    iframe.icont{
+        width: 98%;
+
     }
     
     div#menu ul ul{
@@ -280,14 +285,15 @@ div#menu ul ul ul li:hover{
 }
 
 @media screen and (max-width: 600px) {
-    img.ph{
-        display: none;
-    }
-    
     iframe.icont{
         width: 98%;
 
     }
+
+    img.ph{
+        display: none;
+    }
+    
     div#menu ul li.style,div#menu li#sousmenu{
         background-image: none;
         font-size: 10%;
@@ -312,13 +318,15 @@ div#menu ul ul ul li:hover{
     iframe.icont{
         width: 68%;
     }
+
 }
 
 @media screen and (max-width: 425px){
     div.cont{
-        height: 513px;
+        height: 505px;
+        width: 96%;
     }
     iframe.icont{
-        width: 62%;
+        width: 67%;
     }
 }
