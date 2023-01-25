@@ -241,11 +241,11 @@ div#menu ul li.style3:hover{
     box-shadow: none;
     transition: 0.3s;
 }
-
+/* C'est le petit coté colorer quand on passe dessus, celui ci est le niveau 1  */
 div#menu ul li:hover {
     border-left-color: rgb(187, 255, 0);
 }
-/* C'est le petit coté colorer quand on passe dessus, celui ci est pour le niveau 2 */
+/* Celui ci est pour le niveau 2 */
 div#menu ul ul li:hover{
     border-left-color: #6c6b27;
 }
