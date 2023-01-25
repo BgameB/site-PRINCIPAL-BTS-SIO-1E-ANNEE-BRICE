@@ -260,7 +260,7 @@ div#menu ul ul ul li:hover{
 
 
 @media screen and (max-width: 800px) {
-    div#menu ul li.style,div#menu li.sousmenu{
+    div#menu ul li.style,div#menu li#sousmenu{
         font-size: 40%;
         width: 40%;
     }
@@ -290,7 +290,8 @@ div#menu ul ul ul li:hover{
 }
 
 @media screen and (max-width: 550px) {
-    div#menu ul li.style,div#menu li.sousmenu{
+    div#menu ul li.style,div#menu li#sousmenu{
+        background-image: none;
         font-size: 10%;
         width: 10%;
         padding-left: 8px;
