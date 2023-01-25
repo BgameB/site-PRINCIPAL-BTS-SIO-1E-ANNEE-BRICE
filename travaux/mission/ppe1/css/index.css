@@ -294,12 +294,11 @@ div#menu ul ul ul li:hover{
         display: none;
     }
     
-    div#menu ul li.style,div#menu li#sousmenu{
-        background-image: none;
+    div#menu ul li.style1,div#menu ul li.style2,div#menu ul li.style3,div#menu li#sousmenu{
         font-size: 10%;
         width: 10%;
         padding-left: 8px;
-        margin-left: 0px;
+        margin-left: 20px;
     }
     
     div#menu ul ul{
