@@ -48,6 +48,10 @@ input,textarea{
   margin:10px 0px 0px 14%  ;
 }
 
+textarea.lb,input.btn{
+  margin: 10px 0px 0px 23%;
+}
+
 input.btn:hover{
   background-color: #e3f4a1;
   transform: translate(2px, 2px);
