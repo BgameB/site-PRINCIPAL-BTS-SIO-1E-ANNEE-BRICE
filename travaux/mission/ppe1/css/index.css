@@ -21,7 +21,7 @@ header{
 div.cont{
     border: 10px solid yellow;
     background-color:  #f3eb00;
-    height: 580px;
+    height: 760px;
     width: 97.3%;
     display: flex;
     margin: 5px;
@@ -256,7 +256,7 @@ div#menu ul ul ul li:hover{
 /* Pour rendre le site responsif (un minimum, je commence dedans, j'ai essayé*/
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
     div.cont{
         height: 800px;
     }
@@ -299,10 +299,7 @@ div#menu ul ul ul li:hover{
     }
     
     div#menu ul ul{
-        position: absolute;
-        top: 0;
         left: 12px;
-        display: none;
     
     } 
 
@@ -317,10 +314,18 @@ div#menu ul ul ul li:hover{
 
 @media screen and (max-width: 425px){
     div.cont{
-        height: 505px;
+        height: 710px;
         width: 96%;
     }
     iframe.icont{
         width: 67%;
     }
+    div#menu ul li.style1,div#menu ul li.style2,div#menu ul li.style3,div#menu li#sousmenu{
+        font-size: 6px;
+        margin-left: 0px;
+    }
+    div#menu ul li.style1,div#menu ul li.style2,div#menu ul li.style3{
+        margin-left: 17px;
+    }
 }
+
