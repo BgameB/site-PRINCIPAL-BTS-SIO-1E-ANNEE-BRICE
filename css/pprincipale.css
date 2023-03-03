@@ -2,7 +2,7 @@ html {
     height:100%;
 }
 body { 
-    background-image: url(../image/font.gif);
+    background-image: url(../img/font.gif);
     margin:0;
     display: flex;
     justify-content: center;
