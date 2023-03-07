@@ -1,5 +1,5 @@
 
-
+let test = 1
 function fillstr(tab,liste){ 
     //// Il mélange ce qu'il y a dans la liste tabDesc et attribu le résultat a iDesc
     //il affiche la description contenu dans iVar dans la case associer au input "liste" du html ,via la variable liste et la position i
@@ -46,14 +46,48 @@ function actualiseresultline(){
     let actEm = document.getElementById("em");
     let actTtc = document.getElementById("ttc");
     let actTtcr = document.getElementById("ttcr");
-    actHt.value = '';ptec();
-    actR.value = '';
-    actHtr.value = '';
-    actTi.value = '';
-    actT.value = '';
-    actEm.value = '';
-    actTtc.value = '';
-    actTtcr.value = '';
+    if(actHt===null){
+
+    }else{
+        actHt.value = '';
+    }
+    if(actR===null){
+
+    }else{
+        actR.value = '';
+    }
+    if(actHtr===null){
+
+    }else{
+        actHtr.value = '';
+    }
+    if(actTi===null){
+
+    }else{
+        actTi.value = '';
+    }
+    if(actT===null){
+
+    }else{
+        actT.value = '';
+    }
+    if(actEm===null){
+
+    }else{
+        actEm.value = '';
+    }
+    if(actTtc===null){
+
+    }else{
+        actTtc.value = '';
+    }
+    if(actTtcr===null){
+
+    }else{
+        actTtcr.value = '';
+    }
+    ptec();
+
 }
 
 function fill(){        
@@ -75,10 +109,13 @@ function fill(){
     let randomTi = document.getElementsByClassName("ti");
     let randomEm = document.getElementsByClassName("em");
     //Ces 3 lignes appelle la fonction avec le bon emplacement et 100 pour pas que ça ne 100% et pour EM (Expedito Manutentione) n'importe quelle chiffre
+    if(test===1){
+        fillRandomIntAssociate(100,randomR);
+        fillRandomIntAssociate(100,randomTi);ptec();
+        fillRandomIntAssociate(fillRandomInt(1,10000),randomEm); //fonction dans une fonction, me permet d'avoir un nombre aléatoire entre 0 et 10000 à multiplier a un nombre aléatoire entre 0 et 9 le tout +1
+    }else{
 
-    fillRandomIntAssociate(100,randomR);
-    fillRandomIntAssociate(100,randomTi);ptec();
-    fillRandomIntAssociate(fillRandomInt(1,10000),randomEm); //fonction dans une fonction, me permet d'avoir un nombre aléatoire entre 0 et 10000 à multiplier a un nombre aléatoire entre 0 et 9 le tout +1
+    }
     const tabDesc = new Array("disque_dur","lampe","pc_bureau","pc_gaming","cpu","carte_graphique","ram","ssd_500go","boitier_coursair","PSU_700w","ventilateur_rgb","ventirad_intel","ventirad_amd");
     const tabName = new Array("Vagner","Besos","Musk","Jato","Verstappen","Hamilton","Wolf","Palmal","Ocon","Mbappé","Messi","Chergui","Gillot","Bourguiba" );
     const tabSoc = new Array("Amazon","SpaceX","Google","Apple","Microsoft","OVH","Facebook","Cdiscount","TotalEnergie","HP","AMD","Nvidia","Intel");
@@ -124,7 +161,7 @@ function fill(){
         chhhh.value = "by Verger--Doucy Brice 1btssiobt facture © 2023";
         chhhhh.value = "by Verger--Doucy Brice 1btssiobt facture © 2023";
         chhhhhh.value = "by Verger--Doucy Brice 1btssiobt facture © 2023";
-        echo;
+  
     }
     
 
@@ -155,6 +192,12 @@ function addLine(v){ // Fonction crée pour éviter d'avoir a se répéter pour 
     <td id="del"><input type="text" class="price" name="price" > € </td> 
     <td id="del"><input type="text" name="total" class="totalLine" placeholder="0.00" readonly> € </td></tr>`);
     }
+    if(test===0){
+        test=1;
+
+    }else{
+
+    }
     if(size<300){
         actualiseresultline()
     }else if(size>= 300){
@@ -167,7 +210,7 @@ function addLine(v){ // Fonction crée pour éviter d'avoir a se répéter pour 
         chhhh.value = "by Verger--Doucy Brice 1btssiobt facture © 2023";
         chhhhh.value = "by Verger--Doucy Brice 1btssiobt facture © 2023";
         chhhhhh.value = "by Verger--Doucy Brice 1btssiobt facture © 2023";
-        echo;
+
     }
     
 }
@@ -192,7 +235,7 @@ function addLineAll(){
         chhhh.value = "by Verger--Doucy Brice 1btssiobt facture © 2023";
         chhhhh.value = "by Verger--Doucy Brice 1btssiobt facture © 2023";
         chhhhhh.value = "by Verger--Doucy Brice 1btssiobt facture © 2023";
-        echo;
+ 
     }ptec();
 }   
 
@@ -200,7 +243,12 @@ function removeLine(k){ // Cette fonction permet de ne pas faire de répétition
         
     for(let i=0 ; i!=k ; i++){
         let suppdiv = document.getElementById("del"); // Récupération de tout les éléments dans le html ayant pour id "del"
-        suppdiv.remove();  // Supprime l'élément qu'on a défini juste au dessus
+        if(suppdiv===null){
+            break
+        }else{
+            suppdiv.remove();  // Supprime l'élément qu'on a défini juste au dessus
+        }
+        
     } ptec();
 }
 
@@ -215,8 +263,12 @@ function removeLineAll(){ //Permet de supprimer toutes les lignes qui ont été 
    
     if(f!=null && g!=null && h!=null && i!=null && j!=null){
     let listeSupp = document.getElementById("del"); // L'id del a été mis dans toute les lignes des colonnes et lignes rajouter via la fonctionn addLine() Le tabeau de base qui contient une seul ligne qui est contenu dans le html n'a pas cette id pour pas qu'il ne sois supprimer
-    let size = listeSupp.length;
-    removeLine(size); // Elle appelle la fonction qui permet de supprimer
+    if(listeSupp===null){
+        
+    }else{
+        let size = listeSupp.length;
+        removeLine(size); // Elle appelle la fonction qui permet de supprimer
+    }
     }else{
         let chhhh = document.getElementById("tt");
         let chhhhh = document.getElementById("ttt");
@@ -224,8 +276,15 @@ function removeLineAll(){ //Permet de supprimer toutes les lignes qui ont été 
         chhhh.value = "by Verger--Doucy Brice 1btssiobt facture © 2023";
         chhhhh.value = "by Verger--Doucy Brice 1btssiobt facture © 2023";
         chhhhhh.value = "by Verger--Doucy Brice 1btssiobt facture © 2023";
-        echo;
+     
     }ptec();
+
+    if(test===1){
+        test = 0;
+
+    }else{
+     
+    }
 }
 
 
@@ -240,87 +299,93 @@ function calcul(){
     let i = document.getElementById("!");
     let j = document.getElementById(":");
     let kkk = document.getElementById("tttt");
+    console.log(kkk.value);
 
     if(f!=null && g!=null && h!=null && i!=null && j!=null && kkk.value===vvv){ 
-    var change = document.getElementById("t"); //Ces 3 lignes Permette de recalculer la taxe appliquer a chaque fois qu'on lance la fonction et de l'actualiser.
-    var changer = '';
-    change.value = changer;
+        if(test===1){
+            var change = document.getElementById("t"); //Ces 3 lignes Permette de recalculer la taxe appliquer a chaque fois qu'on lance la fonction et de l'actualiser.
+        var changer = '';
+        change.value = changer;
 
-    var total = 0;
+        var total = 0;
     
-    var listePrice = document.getElementsByClassName("price");
-    var listeTt = document.getElementsByClassName("totalLine");
-    var listeQte = document.getElementsByClassName("qte");
-    var size = listePrice.length;
-    for (let i = 0; i < size; i++) { // Pour calculer chaque ligne, donc la quantité * le prix de chaque ligne et ensuite on l'attribu dans la case ht
-        listeTt[i].value = (listeQte[i].value) * (listePrice[i].value);
-    }
+        var listePrice = document.getElementsByClassName("price");
+        var listeTt = document.getElementsByClassName("totalLine");
+        var listeQte = document.getElementsByClassName("qte");
+        var size = listePrice.length;
+        for (let i = 0; i < size; i++) { // Pour calculer chaque ligne, donc la quantité * le prix de chaque ligne et ensuite on l'attribu dans la case ht
+            listeTt[i].value = (listeQte[i].value) * (listePrice[i].value);
+        }
 
-    var total = document.getElementsByClassName("totalLine"); // Permet de récupérer tout les prix*
-    let result = 0;
+        var total = document.getElementsByClassName("totalLine"); // Permet de récupérer tout les prix*
+        let result = 0;
 
     
 
-    for (let i = 0; i< total.length; i++) {  // Fait le total de tout les articles * les quantités
-        result += Number(total[i].value);
-    }
-    var totalht = document.getElementById("ht"); // Permet de récuperer l'emplacement dans lequelle il faut mettre le prix ht
-    var em = document.getElementById("em"); // Ces deux lignes permettent d'ajouter si il y en a 1 le EXPEDITO MANUTENTION au prix, par le biais de résultat, il sera également par la suite ajouter au prix ttc, au total ht avec remise, ttc, ttc avec remise.
-    result = result +Number(em.value);
-    totalht.value = result;ptec(); // Attribution du ht a son emplacement dans le code html
+        for (let i = 0; i< total.length; i++) {  // Fait le total de tout les articles * les quantités
+            result += Number(total[i].value);
+        }
+        var totalht = document.getElementById("ht"); // Permet de récuperer l'emplacement dans lequelle il faut mettre le prix ht
+        var em = document.getElementById("em"); // Ces deux lignes permettent d'ajouter si il y en a 1 le EXPEDITO MANUTENTION au prix, par le biais de résultat, il sera également par la suite ajouter au prix ttc, au total ht avec remise, ttc, ttc avec remise.
+        result = result +Number(em.value);
+        totalht.value = result;ptec(); // Attribution du ht a son emplacement dans le code html
 
 
 
 // Application de la remise ht sur le prix HT
-    var c = result;
-    var cc = document.getElementById("r");
-    var d = 1 - (cc.value / 100);
-    var remise = c * d ;
-    var remiseht = document.getElementById("htr");
-    remiseht.value = remise;
-    resultsr = result;
-    result = remise;    
+        var c = result;
+        var cc = document.getElementById("r");
+        var d = 1 - (cc.value / 100);
+        var remise = c * d ;
+        var remiseht = document.getElementById("htr");
+        remiseht.value = remise;
+        resultsr = result;
+        result = remise;    
 // Application de la remise ht sur le prix HT
     
 // Application de la taxation sur le prix HT
-    var cc = document.getElementById("ti");
-    var d = 1 + (cc.value / 100);
-    var taxe = c * d ;
-    var taxetva = document.getElementById("ttc");
-    taxetva.value = taxe;
-    resultttc = taxe;
+        var cc = document.getElementById("ti");
+        var d = 1 + (cc.value / 100);
+        var taxe = c * d ;
+        var taxetva = document.getElementById("ttc");
+        taxetva.value = taxe;
+        resultttc = taxe;
 // Application de la taxation sur le prix HT
 
 
 // Application du calcule pour savoir la taxe en euro appliquer sur le prix et celui ci est non null ou non = 0
-    var taxeaffi= document.getElementById("ti");
-    if(taxeaffi.value != 0 && taxeaffi.value !=null){
-        var taxeaff= document.getElementById("t");
-        var taxeeneuro = taxe - resultsr;
-        taxeaff.value = taxeeneuro;
-    }
+        var taxeaffi= document.getElementById("ti");
+        if(taxeaffi.value != 0 && taxeaffi.value !=null){
+            var taxeaff= document.getElementById("t");
+            var taxeeneuro = taxe - resultsr;
+            taxeaff.value = taxeeneuro;
+        }
 // Application du calcule pour savoir la taxe en euro appliquer sur le prix et celui ci est non null ou non = 0  
    
 
 // Application de la remise ttc sur le prix ttc
-    var c = resultttc;
-    var cc = document.getElementById("r");
-    var d = 1 - (cc.value / 100);
-    var remise = c * d ;
-    var remiseht = document.getElementById("ttcr");
-    remiseht.value = remise;
+        var c = resultttc;
+        var cc = document.getElementById("r");
+        var d = 1 - (cc.value / 100);
+        var remise = c * d ;
+        var remiseht = document.getElementById("ttcr");
+        remiseht.value = remise;
 // Application de la remise ttc sur le prix ttc
 
-    }else{
-        let chhhh = document.getElementById("tt");
-        let chhhhh = document.getElementById("ttt");
-        let chhhhhh = document.getElementById("tttt");
-        chhhh.value = "by Verger--Doucy Brice 1btssiobt facture © 2023";
-        chhhhh.value = "by Verger--Doucy Brice 1btssiobt facture © 2023";
-        chhhhhh.value = "by Verger--Doucy Brice 1btssiobt facture © 2023";
-        echo;
+        }else{
+
+        }
+        
+        }else{
+            let chhhh = document.getElementById("tt");
+            let chhhhh = document.getElementById("ttt");
+            let chhhhhh = document.getElementById("tttt");
+            chhhh.value = "by Verger--Doucy Brice 1btssiobt facture © 2023";
+            chhhhh.value = "by Verger--Doucy Brice 1btssiobt facture © 2023";
+            chhhhhh.value = "by Verger--Doucy Brice 1btssiobt facture © 2023";
+    
+        }
     }
-}
 
 function cancel(){ // Permet de supprimer toutes les valeurs contenues dans les input, donc toutes les produit, prix, etc, pour avoir une page vierge, comme si on venait de la charger
     
@@ -349,7 +414,7 @@ function cancel(){ // Permet de supprimer toutes les valeurs contenues dans les 
         chhhh.value = "by Verger--Doucy Brice 1btssiobt facture © 2023";
         chhhhh.value = "by Verger--Doucy Brice 1btssiobt facture © 2023";
         chhhhhh.value = "by Verger--Doucy Brice 1btssiobt facture © 2023";
-        echo;
+   
     }ptec();
 }
 
@@ -373,7 +438,7 @@ function allNull(){
     chhhh.value = "by Verger--Doucy Brice 1btssiobt facture © 2023";
     chhhhh.value = "by Verger--Doucy Brice 1btssiobt facture © 2023";
     chhhhhh.value = "by Verger--Doucy Brice 1btssiobt facture © 2023";
-        echo;
+  
     }else{
         let chhhh = document.getElementById("tt");
         let chhhhh = document.getElementById("ttt");
@@ -381,7 +446,7 @@ function allNull(){
         chhhh.value = "by Verger--Doucy Brice 1btssiobt facture © 2023";
         chhhhh.value = "by Verger--Doucy Brice 1btssiobt facture © 2023";
         chhhhhh.value = "by Verger--Doucy Brice 1btssiobt facture © 2023";
-        echo;
+
     }ptec();
 }
 
