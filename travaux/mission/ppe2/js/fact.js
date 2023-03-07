@@ -114,7 +114,7 @@ function fill(){
         fillRandomIntAssociate(fillRandomInt(1,10000),randomEm); //fonction dans une fonction, me permet d'avoir un nombre aléatoire entre 0 et 10000 à multiplier a un nombre aléatoire entre 0 et 9 le tout +1
     }else{
 
-    }
+    }ptec();
     const tabDesc = new Array("disque_dur","lampe","pc_bureau","pc_gaming","cpu","carte_graphique","ram","ssd_500go","boitier_coursair","PSU_700w","ventilateur_rgb","ventirad_intel","ventirad_amd");
     const tabName = new Array("Vagner","Besos","Musk","Jato","Verstappen","Hamilton","Wolf","Palmal","Ocon","Mbappé","Messi","Chergui","Gillot","Bourguiba" );
     const tabSoc = new Array("Amazon","SpaceX","Google","Apple","Microsoft","OVH","Facebook","Cdiscount","TotalEnergie","HP","AMD","Nvidia","Intel");
