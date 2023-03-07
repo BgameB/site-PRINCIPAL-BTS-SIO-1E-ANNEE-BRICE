@@ -1,4 +1,3 @@
-
 let test = 1
 function fillstr(tab,liste){ 
     //// Il mélange ce qu'il y a dans la liste tabDesc et attribu le résultat a iDesc
