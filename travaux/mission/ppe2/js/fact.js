@@ -184,22 +184,37 @@ function addLine(v){ // Fonction crée pour éviter d'avoir a se répéter pour 
     var size = listeTotal.length;
     const allInputPage = document.querySelectorAll('input');
     for(j = size+1; j<size+(v+1) ; j++){ //On prend le nombre de ligne qu'il y a déjà, on ajoute 1 pour que la première fois qu'on ajoute des lignes il ajoute au moins 1 ligne si aucune n'existe, et donc que le size = 0, le +1 au v (v+1) est la pour équitabilisé les choses. 
-        table.innerHTML +=  //On ajoute a la table ce qu'il y a entre ``, le ${j+"."+" "} est la position de la ligne qu'on ajoute, permettant d'avoir toujours le bon numéro associé a la bonne ligne, peut importe comment on utilise le site ou la fonction
-    (`<tr id="del">
-    <td id="del">${j+"."+" "}<input type="text" class="desc" name="desc" ></td> 
-    <td id="del"><input type="text"  class="qte" name="qte" ></td> 
-    <td id="del"><input type="text" class="price" name="price" > € </td> 
-    <td id="del"><input type="text" name="total" class="totalLine" placeholder="0.00" readonly> € </td></tr>`);
+
+    var table = document.getElementById("table");
+
+    // crée un nouvel élément tr
+    var newRow = document.createElement("tr");
+    newRow.id = "del";
+    // crée les nouveaux éléments td et les ajoute à la nouvelle ligne
+    var cell1 = document.createElement("td");
+    cell1.id = "del";
+    cell1.innerHTML = j + "." + " " + "<input type='text' class='desc' name='desc' >";
+    newRow.appendChild(cell1);
+
+    var cell2 = document.createElement("td");
+    cell2.id = "del";
+    cell2.innerHTML = "<input type='text' class='qte' name='qte' >";
+    newRow.appendChild(cell2);
+
+    var cell3 = document.createElement("td");
+    cell3.id = "del";
+    cell3.innerHTML = "<input type='text' class='price' name='price' > € ";
+    newRow.appendChild(cell3);
+
+    var cell4 = document.createElement("td");
+    cell4.id = "del";
+    cell4.innerHTML = "<input type='text' name='total' class='totalLine' placeholder='0.00' readonly> € ";
+    newRow.appendChild(cell4);
+
+    // ajoute la nouvelle ligne à la fin de la table
+    table.appendChild(newRow);
     }
     
-    // var nblinee = document.getElementById("table");
-    // var aadd = (`<tr id="del">
-    // <td id="del">${j+"."+" "}<input type="text" class="desc" name="desc" ></td> 
-    // <td id="del"><input type="text"  class="qte" name="qte" ></td> 
-    // <td id="del"><input type="text" class="price" name="price" > € </td> 
-    // <td id="del"><input type="text" name="total" class="totalLine" placeholder="0.00" readonly> € </td></tr>`)
-    // var addnblinee = document.createTextNode(aadd);
-    // nblinee.appendChild(addnblinee);  //  Ceci est non fonctionnel mais comme je suis pas loin de le faire fonctionner je le garde quand meme
     if(test===0){
         test=1;
 
