@@ -198,17 +198,17 @@ function addLine(v){ // Fonction crée pour éviter d'avoir a se répéter pour 
 
     var cell2 = document.createElement("td");
     cell2.id = "del";
-    cell2.innerHTML = "<input type='text' class='qte' name='qte' >";
+    cell2.innerHTML = "<input type='number' class='qte' name='qte' >";
     newRow.appendChild(cell2);
 
     var cell3 = document.createElement("td");
     cell3.id = "del";
-    cell3.innerHTML = "<input type='text' class='price' name='price' > € ";
+    cell3.innerHTML = "<input type='number' class='price' name='price' > € ";
     newRow.appendChild(cell3);
 
     var cell4 = document.createElement("td");
     cell4.id = "del";
-    cell4.innerHTML = "<input type='text' name='total' class='totalLine' placeholder='0.00' readonly> € ";
+    cell4.innerHTML = "<input type='number' name='total' class='totalLine' placeholder='0.00' readonly> € ";
     newRow.appendChild(cell4);
 
     // ajoute la nouvelle ligne à la fin de la table
