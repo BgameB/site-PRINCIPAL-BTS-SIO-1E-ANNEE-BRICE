@@ -10,8 +10,8 @@ function fillstr(tab,liste){
 }
 
 function fillRandomIntAddCalcul(quantifier1,quantifier2,liste1,liste2,listetotal){
-    
-    for (i = 0; i < liste1.length ; i++){
+    let size = liste1.length
+    for (i = 0; i < size ; i++){
     var variable1 = Math.floor(quantifier1 * Math.random()+1); // Calcule un nombre aléatoire de 1 jusq'a X, X-1 avec le Y*mathrandom et le + 1, ce +1 sert aussi également a faire en sorte que le chiffre sois non null Le math random etant un chiffe aléatoire entre 0 et 9.
     var variable2 = Math.floor(quantifier2 * Math.random()+1);
     liste1[i].value = variable1; // Cet ligne permet d'afficher dans chaque input html la valeur voulu
@@ -213,6 +213,7 @@ function addLine(v){ // Fonction crée pour éviter d'avoir a se répéter pour 
 
     // ajoute la nouvelle ligne à la fin de la table
     table.appendChild(newRow);
+    calcul();
     }
     
     if(test===0){
@@ -221,10 +222,10 @@ function addLine(v){ // Fonction crée pour éviter d'avoir a se répéter pour 
     }else{
 
     }
-    if(size<300){
-        actualiseresultline()
-    }else if(size>= 300){
+    if(size>= 300){
         fill();
+    }else if(size < 300){
+
     }
     }else{
         let chhhh = document.getElementById("tt");
