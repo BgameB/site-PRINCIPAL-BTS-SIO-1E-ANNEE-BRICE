@@ -327,9 +327,15 @@ function calcul(){
 
     if(f!=null && g!=null && h!=null && i!=null && j!=null && kkk.value===vvv){ 
         if(test===1){
-            var change = document.getElementById("t"); //Ces 3 lignes Permette de recalculer la taxe appliquer a chaque fois qu'on lance la fonction et de l'actualiser.
-        var changer = '';
-        change.value = changer;
+        
+        var change = document.getElementById("t"); //Ces 3 lignes Permette de recalculer la taxe appliquer a chaque fois qu'on lance la fonction et de l'actualiser.
+        if(change!=null){
+            var changer = '';
+            change.value = changer;
+        }else{
+
+        }
+        
 
         var total = 0;
     
@@ -351,49 +357,76 @@ function calcul(){
         }
         var totalht = document.getElementById("ht"); // Permet de récuperer l'emplacement dans lequelle il faut mettre le prix ht
         var em = document.getElementById("em"); // Ces deux lignes permettent d'ajouter si il y en a 1 le EXPEDITO MANUTENTION au prix, par le biais de résultat, il sera également par la suite ajouter au prix ttc, au total ht avec remise, ttc, ttc avec remise.
-        result = result +Number(em.value);
-        totalht.value = result;ptec(); // Attribution du ht a son emplacement dans le code html
+        if(em!=null){
+            result = result +Number(em.value);
+            totalht.value = result;ptec(); // Attribution du ht a son emplacement dans le code html
+        }else{
+
+        }
+
 
 
 
 // Application de la remise ht sur le prix HT
         var c = result;
         var cc = document.getElementById("r");
-        var d = 1 - (cc.value / 100);
-        var remise = c * d ;
-        var remiseht = document.getElementById("htr");
-        remiseht.value = remise;
+        if(cc!=null){
+            var d = 1 - (cc.value / 100);
+            var remise = c * d ;
+            var remiseht = document.getElementById("htr");
+            remiseht.value = remise;
+            
+             
+        }else{
+
+        }
         resultsr = result;
-        result = remise;    
+        result = remise;  
+         
 // Application de la remise ht sur le prix HT
     
 // Application de la taxation sur le prix HT
         var cc = document.getElementById("ti");
-        var d = 1 + (cc.value / 100);
-        var taxe = c * d ;
-        var taxetva = document.getElementById("ttc");
-        taxetva.value = taxe;
+        if(cc!=null){
+            var d = 1 + (cc.value / 100);
+            var taxe = c * d ;
+            var taxetva = document.getElementById("ttc");
+            taxetva.value = taxe;
+
+        }else{
+
+        }
         resultttc = taxe;
 // Application de la taxation sur le prix HT
 
 
 // Application du calcule pour savoir la taxe en euro appliquer sur le prix et celui ci est non null ou non = 0
         var taxeaffi= document.getElementById("ti");
-        if(taxeaffi.value != 0 && taxeaffi.value !=null){
-            var taxeaff= document.getElementById("t");
-            var taxeeneuro = taxe - resultsr;
-            taxeaff.value = taxeeneuro;
+        if(taxeaffi!=null){
+            if(taxeaffi.value != 0 && taxeaffi.value !=null){
+                var taxeaff= document.getElementById("t");
+                var taxeeneuro = taxe - resultsr;
+                taxeaff.value = taxeeneuro;
+            }
+        }else{
+
         }
+        
 // Application du calcule pour savoir la taxe en euro appliquer sur le prix et celui ci est non null ou non = 0  
    
 
 // Application de la remise ttc sur le prix ttc
         var c = resultttc;
         var cc = document.getElementById("r");
-        var d = 1 - (cc.value / 100);
-        var remise = c * d ;
-        var remiseht = document.getElementById("ttcr");
-        remiseht.value = remise;
+        if(cc!=null){
+            var d = 1 - (cc.value / 100);
+            var remise = c * d ;
+            var remiseht = document.getElementById("ttcr");
+            remiseht.value = remise;
+        }else{
+
+        }
+        
 // Application de la remise ttc sur le prix ttc
 
         }else{
