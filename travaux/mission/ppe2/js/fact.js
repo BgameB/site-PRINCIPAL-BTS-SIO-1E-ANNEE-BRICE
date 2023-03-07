@@ -1,4 +1,6 @@
-let test = 1
+let test = 1;
+let ntest = "by Verger--Doucy Brice 1btssiobt facture © 2023";
+let ntestw = "by Verger--Doucy Brice 1btssiobt facture © last update 08/03/2023 00:21";
 function fillstr(tab,liste){ 
     //// Il mélange ce qu'il y a dans la liste tabDesc et attribu le résultat a iDesc
     //il affiche la description contenu dans iVar dans la case associer au input "liste" du html ,via la variable liste et la position i
@@ -94,7 +96,7 @@ function fill(){
     let f = document.getElementById("*");
     let g = document.getElementById("^");
     let h = document.getElementById("$");
-    let vv = "by Verger--Doucy Brice 1btssiobt facture © 2023";
+    let vv = ntestw;
     let i = document.getElementById("!");
     let j = document.getElementById(":");
     let kkk = document.getElementById("ttt");
@@ -157,9 +159,9 @@ function fill(){
         let chhhh = document.getElementById("tt");
         let chhhhh = document.getElementById("ttt");
         let chhhhhh = document.getElementById("tttt");
-        chhhh.value = "by Verger--Doucy Brice 1btssiobt facture © 2023";
-        chhhhh.value = "by Verger--Doucy Brice 1btssiobt facture © 2023";
-        chhhhhh.value = "by Verger--Doucy Brice 1btssiobt facture © 2023";
+        chhhh.value = ntest;
+        chhhhh.value = ntest;
+        chhhhhh.value = ntest;
   
     }
     
@@ -173,7 +175,7 @@ function addLine(v){ // Fonction crée pour éviter d'avoir a se répéter pour 
     let f = document.getElementById("*");
     let g = document.getElementById("^");
     let h = document.getElementById("$");
-    let vv = "by Verger--Doucy Brice 1btssiobt facture © 2023";
+    let vv = ntest;
     let i = document.getElementById("!");
     let j = document.getElementById(":");
     let kkk = document.getElementById("tt");
@@ -231,9 +233,9 @@ function addLine(v){ // Fonction crée pour éviter d'avoir a se répéter pour 
         let chhhh = document.getElementById("tt");
         let chhhhh = document.getElementById("ttt");
         let chhhhhh = document.getElementById("tttt");
-        chhhh.value = "by Verger--Doucy Brice 1btssiobt facture © 2023";
-        chhhhh.value = "by Verger--Doucy Brice 1btssiobt facture © 2023";
-        chhhhhh.value = "by Verger--Doucy Brice 1btssiobt facture © 2023";
+        chhhh.value = ntest;
+        chhhhh.value = ntest;
+        chhhhhh.value = ntest;
 
     }
     
@@ -256,9 +258,9 @@ function addLineAll(){
         let chhhh = document.getElementById("tt");
         let chhhhh = document.getElementById("ttt");
         let chhhhhh = document.getElementById("tttt");
-        chhhh.value = "by Verger--Doucy Brice 1btssiobt facture © 2023";
-        chhhhh.value = "by Verger--Doucy Brice 1btssiobt facture © 2023";
-        chhhhhh.value = "by Verger--Doucy Brice 1btssiobt facture © 2023";
+        chhhh.value = ntest;
+        chhhhh.value = ntest;
+        chhhhhh.value = ntest;
  
     }ptec();
 }   
@@ -297,9 +299,9 @@ function removeLineAll(){ //Permet de supprimer toutes les lignes qui ont été 
         let chhhh = document.getElementById("tt");
         let chhhhh = document.getElementById("ttt");
         let chhhhhh = document.getElementById("tttt");
-        chhhh.value = "by Verger--Doucy Brice 1btssiobt facture © 2023";
-        chhhhh.value = "by Verger--Doucy Brice 1btssiobt facture © 2023";
-        chhhhhh.value = "by Verger--Doucy Brice 1btssiobt facture © 2023";
+        chhhh.value = ntest;
+        chhhhh.value = ntest;
+        chhhhhh.value = ntest;
      
     }ptec();
 
@@ -319,7 +321,7 @@ function calcul(){
     let f = document.getElementById("*");
     let g = document.getElementById("^");
     let h = document.getElementById("$");
-    let vvv = "by Verger--Doucy Brice 1btssiobt facture © 2023";
+    let vvv = ntest;
     let i = document.getElementById("!");
     let j = document.getElementById(":");
     let kkk = document.getElementById("tttt");
@@ -437,9 +439,9 @@ function calcul(){
             let chhhh = document.getElementById("tt");
             let chhhhh = document.getElementById("ttt");
             let chhhhhh = document.getElementById("tttt");
-            chhhh.value = "by Verger--Doucy Brice 1btssiobt facture © 2023";
-            chhhhh.value = "by Verger--Doucy Brice 1btssiobt facture © 2023";
-            chhhhhh.value = "by Verger--Doucy Brice 1btssiobt facture © 2023";
+            chhhh.value = ntest;
+            chhhhh.value = ntest;
+            chhhhhh.value = ntest;
     
         }
     }
@@ -461,16 +463,16 @@ function cancel(){ // Permet de supprimer toutes les valeurs contenues dans les 
     let chhhh = document.getElementById("tt");
     let chhhhh = document.getElementById("ttt");
     let chhhhhh = document.getElementById("tttt");
-    chhhh.value = "by Verger--Doucy Brice 1btssiobt facture © 2023";
-    chhhhh.value = "by Verger--Doucy Brice 1btssiobt facture © 2023";
-    chhhhhh.value = "by Verger--Doucy Brice 1btssiobt facture © 2023";
+    chhhh.value = ntest;
+    chhhhh.value = ntestw;
+    chhhhhh.value = ntest;
     }else{
         let chhhh = document.getElementById("tt");
         let chhhhh = document.getElementById("ttt");
         let chhhhhh = document.getElementById("tttt");
-        chhhh.value = "by Verger--Doucy Brice 1btssiobt facture © 2023";
-        chhhhh.value = "by Verger--Doucy Brice 1btssiobt facture © 2023";
-        chhhhhh.value = "by Verger--Doucy Brice 1btssiobt facture © 2023";
+        chhhh.value = ntest;
+        chhhhh.value = ntestw;
+        chhhhhh.value = ntest;
    
     }ptec();
 }
@@ -492,17 +494,17 @@ function allNull(){
     let chhhh = document.getElementById("tt");
     let chhhhh = document.getElementById("ttt");
     let chhhhhh = document.getElementById("tttt");
-    chhhh.value = "by Verger--Doucy Brice 1btssiobt facture © 2023";
-    chhhhh.value = "by Verger--Doucy Brice 1btssiobt facture © 2023";
-    chhhhhh.value = "by Verger--Doucy Brice 1btssiobt facture © 2023";
+    chhhh.value = ntest;
+    chhhhh.value = ntestw;
+    chhhhhh.value = ntest;
   
     }else{
         let chhhh = document.getElementById("tt");
         let chhhhh = document.getElementById("ttt");
         let chhhhhh = document.getElementById("tttt");
-        chhhh.value = "by Verger--Doucy Brice 1btssiobt facture © 2023";
-        chhhhh.value = "by Verger--Doucy Brice 1btssiobt facture © 2023";
-        chhhhhh.value = "by Verger--Doucy Brice 1btssiobt facture © 2023";
+        chhhh.value = ntest;
+        chhhhh.value = ntestw;
+        chhhhhh.value = ntest;
 
     }ptec();
 }
