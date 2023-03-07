@@ -157,7 +157,7 @@ function addLine(v){ // Fonction crée pour éviter d'avoir a se répéter pour 
     }
     if(size<30){
         actualiseresultline()
-    }else if(size>= 30){
+    }else if(size>= 300){
         fill();
     }
     }else{
