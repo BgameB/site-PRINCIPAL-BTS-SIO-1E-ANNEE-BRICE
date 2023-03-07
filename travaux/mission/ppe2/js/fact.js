@@ -191,6 +191,14 @@ function addLine(v){ // Fonction crée pour éviter d'avoir a se répéter pour 
     <td id="del"><input type="text" class="price" name="price" > € </td> 
     <td id="del"><input type="text" name="total" class="totalLine" placeholder="0.00" readonly> € </td></tr>`);
     }
+    // var nblinee = document.getElementById("table");
+        // var aadd = (`<tr id="del">
+        // <td id="del">${j+"."+" "}<input type="text" class="desc" name="desc" ></td> 
+        // <td id="del"><input type="text"  class="qte" name="qte" ></td> 
+        // <td id="del"><input type="text" class="price" name="price" > € </td> 
+        // <td id="del"><input type="text" name="total" class="totalLine" placeholder="0.00" readonly> € </td></tr>`)
+        // var addnblinee = document.createTextNode(aadd);
+        // nblinee.appendChild(addnblinee);    Ceci est non fonctionnel mais comme je suis pas loin de le faire fonctionner je le garde quand meme
     if(test===0){
         test=1;
 
