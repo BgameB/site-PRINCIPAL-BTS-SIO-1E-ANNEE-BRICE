@@ -1,0 +1,245 @@
+table{
+  width: 100%;
+}
+
+
+div.containerall {
+	border: 5px solid #dca8db;
+	padding: 10px;
+  	margin-left: 60px;
+  	margin-right: 60px;
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+div.containerpack {
+	border: 3px solid grey;
+	box-shadow: rgb(255, 0, 230) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+div.containerpacklast {
+	border: 3px solid grey;
+	box-shadow: rgb(255, 0, 230) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+	
+
+}
+
+div.container1 {
+	border: 3px solid red;
+
+}
+img {
+	max-width: 15%;
+	max-height: 15%;
+	border-radius: 3px;
+	border: 3px solid grey;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+
+p {
+	font-family: Bahnschrift SemiBold;
+}
+
+
+label {
+	font-family: Trebuchet MS;
+
+}
+
+
+a{
+  	margin-right: 80px;
+  	font-size: 60px;
+	font-weight: bold;
+  	color: #1b031f;
+  	text-shadow: 2px 2px 2px #540462, 1px 1px 1px rgb(255, 0, 157), 1px 1px 3px rgb(255, 0, 157);
+}
+
+
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #be0ca3;
+    text-shadow: 1px 1px 1px black, 0 0 3px rgb(242, 65, 148), 0 0 2px rgb(74, 5, 69);
+}
+button{
+
+  	background-color: #F7E4E4;
+  	border: 2px solid #be0ca3;
+  	border-radius: 7px;
+  	box-shadow: #be0ca3 2px 2px 0 0;
+  	color: #be0ca3;
+  	cursor: pointer;
+  	display: inline-block;
+  	font-weight: 600;
+  	font-size: 14px;
+  	padding: 0 18px;
+  	line-height: 30px;
+  	font-family: Verdana, Geneva, Tahoma, sans-serif;
+  	text-align: center;
+  	text-decoration: none;
+  	text-shadow: 1px 1px 1px #540462, 0 0 1px rgb(255, 0, 157), 0 0 1px rgb(255, 0, 157);
+  	user-select: none;
+  	transition: 0.1s;
+  	width: 200px;
+  	margin: 10px;
+  
+}
+
+
+
+
+button:hover{
+    background-color: #f6d6f3;
+    transform: translate(4px, 4px);
+    box-shadow: none;
+    transition: 0.3s;
+}
+
+input{
+	border-color: #be0ca3;
+	border-radius: 2px;
+	padding: 2px;
+	width: 180px;
+}
+
+
+textarea{
+	border-color: #be0ca3;
+	border-radius: 2px;
+	max-width: 1000px;
+	max-height: 500px;
+	width: 1000px;
+	height: 500px;
+}
+
+input.date{
+	margin-top: 10px;
+	margin-right: 60px;
+	padding: 15px;
+	font-size: 15px;
+}
+
+
+div.addingline{
+	border: 2px solid #be0ca3;
+}
+
+div.addingline button.al{
+	background-color: #F7E4E4;
+  	border: 2px solid #be0ca3;
+  	border-radius: 7px;
+  	box-shadow: none;
+  	color: #be0ca3;
+  	cursor: pointer;
+  	display: inline-block;
+  	font-weight: 600;
+  	font-size: 14px;
+  	padding: 0 18px;
+  	line-height: 30px;
+  	font-family: Verdana, Geneva, Tahoma, sans-serif;
+  	text-align: center;
+  	text-decoration: none;
+ 	text-shadow: 1px 1px 1px #540462, 0 0 1px rgb(255, 0, 157), 0 0 1px rgb(255, 0, 157);
+  	user-select: none;
+  	transition: 0.1s;
+  	width: 200px;
+  	margin: 10px;
+}
+
+div.addingline button.al:hover{
+	background-color: none;
+    transform: none;
+    box-shadow: none;
+    transition: none;
+	cursor: default;
+}
+
+div.addingline input.lineadd{
+	background-color: #F7E4E4;
+  	border: 2px solid #000000;
+  	border-radius: 7px;
+  	color: #be0ca3;
+  	cursor: pointer;
+  	display: inline-block;
+  	font-weight: 600;
+  	font-size: 14px;
+  	padding: 0 18px;
+  	line-height: 30px;
+  	font-family: Verdana, Geneva, Tahoma, sans-serif;
+  	text-align: center;
+  	text-decoration: none;
+  	text-shadow: 1px 1px 1px #d2bcd5, 0 0 1px rgb(38, 34, 36), 0 0 1px rgb(40, 30, 36);
+  	user-select: none;
+  	transition: 0.1s;
+  	width: 200px;
+  	margin: 10px;
+	cursor: text;
+}
+
+
+
+
+
+@media screen and (max-width:1500px) {
+	textarea{
+		border-color: #be0ca3;
+		border-radius: 2px;
+		max-width: 600px;
+		max-height: 450px;
+		width: 600px;
+		height: 450px;
+	}
+}
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+    input{
+		border-color: #be0ca3;
+		border-radius: 2px;
+		padding: None;
+		width: 90px;
+
+	}
+	a{
+		margin-right: 80px;
+		font-size: 30px;
+	  	font-weight: bold;
+		color: #1b031f;
+		text-shadow: 2px 2px 2px #540462, 1px 1px 1px rgb(255, 0, 157), 1px 1px 3px rgb(255, 0, 157);
+  }
+  textarea{
+	border-color: #be0ca3;
+	border-radius: 2px;
+	max-width: 300px;
+	max-height: 170px;
+	width: 300px;
+	height: 170px;
+}
+}
+
+
+@media screen and (max-width: 650px) {
+    input{
+		border-color: #be0ca3;
+		border-radius: 2px;
+		padding: None;
+		width: 60px;
+
+	}
+	textarea{
+		border-color: #be0ca3;
+		border-radius: 2px;
+		max-width: 150px;
+		max-height: 100px;
+		width: 150px;
+		height: 100px;
+	}
+	
+
+    
+}

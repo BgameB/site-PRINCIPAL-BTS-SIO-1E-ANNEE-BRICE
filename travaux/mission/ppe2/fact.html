@@ -1,39 +1,134 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link
+      rel="shortcut icon"
+      href="img/fact.jpg"
+      type="image/x-icon"
+    />
+	<link rel="stylesheet" type="text/css" href="css/fact.css">
 	<meta charset="utf-8">
-	<title>PPE2</title>
+	<script src="js/fact.js" asyc></script>
+	<title>Verger--Doucy Brice PPE2 Facture</title>
+	
 </head>
 <body>
-	<style type="text/css">
+	<div class="containerall">
+		<div class="containerpacklast">
+	
+	</div>
+		<div class="containerpack">
+		<table>
+			<input id="tttt" style="color: #be0ca3; border: none; width: 100%; text-align: left	; cursor: default; font-size: 10px; " value="by Verger--Doucy Brice 1btssiobt facture &copy 2023" readonly disabled>
 
-		h1, h3{
-			font-family: Verdana, Geneva, Tahoma, sans-serif;
-    		color: black;
-    		text-shadow: 1px 1px 1px black, 0 0 3px rgb(242, 65, 148), 0 0 2px rgb(74, 5, 69);
-    		margin-bottom: 100px;
-		}
-		h3{
-			position: absolute;
-			bottom: 60px;
-			margin-left: 22% ;
-			margin-bottom: 0px;
-		}
+			  <tr><td width="30%"><img src="img/profile.png"></td><td style="text-align: right;"><a id="*">Facture</a><br><br><input class="date d" type="date" value="<?php echo date('Y-m-d'); ?>" ><br><br><input class="date nf" type="Number" name="nfacture" placeholder="N°Facture XX"></td></tr>
+				<tr><td width="70%"><label><h1>
+					Nom de la compagnie
+				</h1></label>
 
+				<p>
+					<input placeholder="Nom de la companie" type="text" name="noc" class="soc"><br><br>
+					<input placeholder="Adresse postale" type="text" name="adr" class="adr"><br><br>
+                    <input placeholder="Contact" type="text" name="contact" class="tel">
+
+				</td><td style="text-align: right;"><label><h1 id="^" style="font-size: 20px; color: #390d33; margin-right: 60px;">Condition de paiement</h1></label><input class="date cp" placeholder="Décrivez" type="text" name="contact"></td></p></tr>
+				
+	</table>
+
+		</div>
+		<div class="containerpack">
+		<table>
+			
+				<tr><td><label><h1 id=":">
+					Destinataire :
+				</h1></label><br>
+				<h2>
+					Nom : <input placeholder="..." type="text" name="name" class="name"><br>Société : <input placeholder="..." type="text" name="societe" class="soc"><br>Adresse postale : <input placeholder="..." type="text" name="adr" class="adr"><br>Téléphone : <input placeholder="..." type="text" name="tel" class="tel"><br>Email : <input placeholder="..." type="text" name="email" class="email">
+				</h2>
+			</td>
+					<td width="49%"><label><h1 id="$"> Envoyer à : </h1></label><br>
+						<h2>
+							Nom : <input placeholder="..." type="text" name="name" class="name"><br>Société : <input placeholder="..." type="text" name="societe" class="soc"><br>Adresse postale : <input placeholder="..." type="text" name="adr" class="adr"><br>Téléphone : <input placeholder="..." type="text" name="tel" class="tel"><br>Email : <input placeholder="..." type="text" name="email" class="email">
+						</h2>
+					</td>
+				</tr>
+	</table>
+	
+		</div>
+		<div class="containerpack">
+			<table id="table">
+				<input id="tt" style="color: #be0ca3; border: none; width: 100%; text-align: left	; cursor: default; font-size: 10px; " value="by Verger--Doucy Brice 1btssiobt facture &copy 2023" readonly disabled>
+
+                <tr>                    <td id="!"> Description </td> 
+                    <td> Quantité </td> <td> Prix unitaire HT</td> 
+                    <td> Total HT </td> 
+                </tr>
+				<script async>
+					addLine(1);
+				</script>
+		    </table>
+
+					 <table>
+						<tr>
+							<td rowspan="9" style="text-align: left;">Mention spécial, note ou aide pour le paiement :<br><br><textarea name="note" id="note"></textarea></td><td></td>
+						</tr>
+						<tr>
+							<td></td><td style="text-align: right;"><p>Total HT :</p><input type="text" name="totalht" id="ht" min="0" readonly> €</td>
+						</tr>
+						<tr>
+							<td></td><td style="text-align: right;"><p>Remise :</p><input class="style r" type="number" name="remise" id="r" min="0" max="100" placeholder="En %"> %</td>
+						</tr>
+						<tr>
+							<td></td><td style="text-align: right;"><p>Total HT avec remise HT :</p><input type="text" name="horstaxeremise" id="htr" min="0" readonly> €</td>
+						</tr>
+						<tr>
+							<td></td><td style="text-align: right;"><p>Taux d'impositon :</p><input class="style ti" type="number" name="taux_dimpo" id="ti" min="0" max="100" placeholder="En %"> %</td>
+						</tr>
+						<tr>
+							<td></td><td style="text-align: right;"><p>Taxe :</p><input type="text" name="taxe" id="t" placeholder="0" min="0" readonly> €</td>
+						</tr>
+						<tr>
+							<td></td><td style="text-align: right;"><p>EXPEDITO MANUTENTION : </p><input type="number" name="expeditomanutention" id="em" placeholder="S'ajoute au prix HT" min="0" class="em"> €</td>
+						</tr>
+						<tr>
+							<td></td><td style="text-align: right;"><p>Total TTC : </p><input type="text" name="toutetaxecomprise" id="ttc" min="0" readonly> €</td>
+						</tr>
+						<tr>
+							<td></td><td style="text-align: right;"><p>Total TTC avec remise TTC (Solde du) :</p><input type="text" name="toutetaxecompriseremise" min="0" id="ttcr" readonly> €</td>
+						</tr>
+						
+
+					 </table>
+	
+		</div>
+		<center>
+		<div class="containerpack">
+			<button onclick="calcul()">Calculer</button>
+			<br>
+			<button onclick="addLine(1)">Ajouter une ligne</button>
+			<button onclick="addLine(10)">Ajouter 10 lignes</button>
+			<button onclick="fill()">Remplissage Auto</button>
 		
-	</style>
-	<center>
-	<h1>	
-		Fini mais sera upload à l'heure de l'AP , Dommage, Bon courage 	&#128512 
+			<div class="addingline">
 
-	</h1>
-<img src="../../../img/stonkintelligence.jpg">
+				<button class="al">Ajouter ? lignes : </button>
+				<input class="lineadd" type="number" name="line" id="line" min="1" placeholder="??">
+				<button onclick="addLineAll()">Ajouter les lignes</button>
+				
+	
+			</div>
 
-</center>
+			<button onclick="cancel()">Annuler</button>
+			<button style="font-size: 9px; color: rgb(0, 0, 0); background-color: red;" onclick="removeLineAll()">Supprimer toutes les lignes</button>
+			<button onclick="allNull()">Mettre 0 partout</button>
+		</div>
+		<div class="containerpacklast">
+	
+			<input id="ttt" style="color: #be0ca3; border: none; width: 100%; text-align: center; cursor: default; font-size: 20px;" value="by Verger--Doucy Brice 1btssiobt facture &copy 2023" readonly disabled>
+		
+		</center>
+	
+	</div>
+	</div>
 </body>
-<footer>
-	<h3>
-		"La triche est la preuve de l'incapacité à réussir de manière honnête." - Ann Landers
-	</h3>
-</footer>
 </html>
