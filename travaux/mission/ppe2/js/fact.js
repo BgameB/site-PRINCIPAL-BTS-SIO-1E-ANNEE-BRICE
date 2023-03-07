@@ -155,7 +155,7 @@ function addLine(v){ // Fonction crée pour éviter d'avoir a se répéter pour 
     <td id="del"><input type="text" class="price" name="price" > € </td> 
     <td id="del"><input type="text" name="total" class="totalLine" placeholder="0.00" readonly> € </td></tr>`);
     }
-    if(size<30){
+    if(size<300){
         actualiseresultline()
     }else if(size>= 300){
         fill();
