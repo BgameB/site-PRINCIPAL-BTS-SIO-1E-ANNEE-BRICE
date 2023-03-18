@@ -1,6 +1,6 @@
 let test = 1;
 let ntest = "by Verger--Doucy Brice 1btssiobt facture © 2023";
-let ntestw = "by Verger--Doucy Brice 1btssiobt facture © last update 08/03/2023 00:21";
+let ntestw = "by Verger--Doucy Brice 1btssiobt facture © last update 18/03/2023 15:48";
 function fillstr(tab,liste){ 
     //// Il mélange ce qu'il y a dans la liste tabDesc et attribu le résultat a iDesc
     //il affiche la description contenu dans iVar dans la case associer au input "liste" du html ,via la variable liste et la position i
@@ -174,7 +174,6 @@ function addLine(v){ // Fonction crée pour éviter d'avoir a se répéter pour 
     
     if(test===0){
         test=1;
-        console.log("addline =1")
     }else{
 
     }
@@ -275,11 +274,17 @@ function addLineAll(){
 //         }
         
 //     } ptec();
-// }
+// } CECI EST UNE ANCIENNE FONCTION 
 
 function removeLine(k){
-
-    document.getElementById("table").deleteRow(k); // Permet de supprimer la 
+    tgg = document.getElementsByClassName("totalLine");
+    if(tgg.length>0){
+        document.getElementById("table").deleteRow(k);
+    }else{
+        
+    }
+    
+    
 }
 
 function removeLineAll(){ //Permet de supprimer toutes les lignes qui ont été ajouté par l'utilisateur
@@ -297,7 +302,7 @@ function removeLineAll(){ //Permet de supprimer toutes les lignes qui ont été 
         
     }else{
         let size = listeSupp.length;
-        for(i=0 ; i<size ; i++){
+        for(i=0 ; i<size+1 ; i++){
             removeLine(-1); // Elle appelle la fonction qui permet de supprimer
         }
        
@@ -341,6 +346,19 @@ function removeLast(){
     }
     
 }
+
+function removeAvLast(){
+    tgg = document.getElementsByClassName("totalLine");
+    if(tgg.length > 1){
+        removeLine(tgg.length-1);
+    }else{
+        
+    }
+    
+    
+}
+
+
 
 
 
