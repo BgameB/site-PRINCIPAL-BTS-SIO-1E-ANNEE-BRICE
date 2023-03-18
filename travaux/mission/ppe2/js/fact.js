@@ -172,6 +172,12 @@ function fill(){
 
 function addLine(v){ // Fonction crée pour éviter d'avoir a se répéter pour ajouter un nombre de ligne v, elle est adapter avec le fait qu'il y a deja la premire ligne dans le html, avec le +1 au v (v+1). Elle permet a la fois de mettre des numéros devant chaque ligne avec la position j et d'ajouter le nombre de ligne qu'on veut lier
     
+    if(test===0){
+        test=1;
+
+    }else{
+
+    }
     let f = document.getElementById("*");
     let g = document.getElementById("^");
     let h = document.getElementById("$");
@@ -215,15 +221,8 @@ function addLine(v){ // Fonction crée pour éviter d'avoir a se répéter pour 
 
     // ajoute la nouvelle ligne à la fin de la table
     table.appendChild(newRow);
-    calcul();
     }
     
-    if(test===0){
-        test=1;
-
-    }else{
-
-    }
     if(size>= 300){
         fill();
     }else if(size < 300){
@@ -265,17 +264,22 @@ function addLineAll(){
     }ptec();
 }   
 
-function removeLine(k){ // Cette fonction permet de ne pas faire de répétition dans ce programme pure, a noté que si l'ont veut supprimer une ligne, il faut multiplié par 4 la valeur qu'on lui donne, pour supprimer les inputs 4 par 4, en l'occurrence pour pouvoir tout supprimer d'un coup on a pas besoin car le compteur compte directement tous les inputs.
+// function removeLine(k){ // Cette fonction permet de ne pas faire de répétition dans ce programme pure, a noté que si l'ont veut supprimer une ligne, il faut multiplié par 4 la valeur qu'on lui donne, pour supprimer les inputs 4 par 4, en l'occurrence pour pouvoir tout supprimer d'un coup on a pas besoin car le compteur compte directement tous les inputs.
         
-    for(let i=0 ; i!=k ; i++){
-        let suppdiv = document.getElementById("del"); // Récupération de tout les éléments dans le html ayant pour id "del"
-        if(suppdiv===null){
-            break
-        }else{
-            suppdiv.remove();  // Supprime l'élément qu'on a défini juste au dessus
-        }
+//     for(let i=0 ; i!=k ; i++){
+//         let suppdiv = document.getElementById("del"); // Récupération de tout les éléments dans le html ayant pour id "del"
+//         if(suppdiv===null){
+//             break
+//         }else{
+//             suppdiv.remove();  // Supprime l'élément qu'on a défini juste au dessus
+//         }
         
-    } ptec();
+//     } ptec();
+// }
+
+function removeLine(k){
+
+    document.getElementById("table").deleteRow(k); // Permet de supprimer la 
 }
 
 function removeLineAll(){ //Permet de supprimer toutes les lignes qui ont été ajouté par l'utilisateur
@@ -288,12 +292,15 @@ function removeLineAll(){ //Permet de supprimer toutes les lignes qui ont été 
     actualiseresultline();
    
     if(f!=null && g!=null && h!=null && i!=null && j!=null){
-    let listeSupp = document.getElementById("del"); // L'id del a été mis dans toute les lignes des colonnes et lignes rajouter via la fonctionn addLine() Le tabeau de base qui contient une seul ligne qui est contenu dans le html n'a pas cette id pour pas qu'il ne sois supprimer
+    let listeSupp = document.getElementsByClassName("totalLine"); // L'id del a été mis dans toute les lignes des colonnes et lignes rajouter via la fonctionn addLine() Le tabeau de base qui contient une seul ligne qui est contenu dans le html n'a pas cette id pour pas qu'il ne sois supprimer
     if(listeSupp===null){
         
     }else{
         let size = listeSupp.length;
-        removeLine(size); // Elle appelle la fonction qui permet de supprimer
+        for(i=0 ; i<size ; i++){
+            removeLine(-1); // Elle appelle la fonction qui permet de supprimer
+        }
+       
     }
     }else{
         let chhhh = document.getElementById("tt");
@@ -311,6 +318,24 @@ function removeLineAll(){ //Permet de supprimer toutes les lignes qui ont été 
     }else{
      
     }
+}
+
+function removeWantLine(g){ // cela permet de supprimer la ligne qu'on veut, je ne l'utilise pas mais elle pourrait servir
+
+    removeLine(g);
+    
+}
+
+function removeLast(){
+    tgg = document.getElementsByClassName("totalLine");
+    if(tgg.length === 1 && test===1){
+        test = 0;
+        actualiseresultline();
+    }else{
+     
+    }
+    removeLine(-1);
+    
 }
 
 
