@@ -1,6 +1,6 @@
 let test = 1;
 let ntest = "by Verger--Doucy Brice 1btssiobt facture © 2023";
-let ntestw = "by Verger--Doucy Brice 1btssiobt facture © last update 18/03/2023 15:55";
+let ntestw = "by Verger--Doucy Brice 1btssiobt facture © last update 18/03/2023 16:15";
 function fillstr(tab,liste){ 
     //// Il mélange ce qu'il y a dans la liste tabDesc et attribu le résultat a iDesc
     //il affiche la description contenu dans iVar dans la case associer au input "liste" du html ,via la variable liste et la position i
@@ -277,8 +277,8 @@ function addLineAll(){
 // } CECI EST UNE ANCIENNE FONCTION 
 
 function removeLine(k){
-    tgg = document.getElementsByClassName("totalLine");
-    if(tgg.length>0){
+    tgg = document.getElementsByClassName("totalLine"); // fonction principal que l'on va utiliser pour toute les intéraction on l'on va supprimer des lignes
+    if(tgg.length>0){ //Code défensif, prévient d'un potentiel bug ou la fonction supprimerais trop de ligne, comme la ligne avec les labels, donc si il n'y pas plus de input totalLine, la fonction ne faire rien
         document.getElementById("table").deleteRow(k);
     }else{
         
@@ -302,8 +302,8 @@ function removeLineAll(){ //Permet de supprimer toutes les lignes qui ont été 
         
     }else{
         let size = listeSupp.length;
-        for(i=0 ; i<size+1 ; i++){
-            removeLine(-1); // Elle appelle la fonction qui permet de supprimer
+        for(i=0 ; i<size ; i++){
+            removeLine(-1); // Elle appelle la fonction qui permet de supprimer une ligne (-1, donc la derniere dans ce cas) et elle faire ca le nombre de fois qu'il y a d'élément qu'il y a dans l'input "totalLine".
         }
        
     }
@@ -333,13 +333,13 @@ function removeWantLine(g){ // cela permet de supprimer la ligne qu'on veut, je 
 
 function removeLast(){
     tgg = document.getElementsByClassName("totalLine");
-    if(tgg.length === 1 && test===1){
+    if(tgg.length === 1 && test===1){ // pour désactiver la fonction calcul() si il n'y a plus de ligne et retirer les resultats dans les cases a droite
         test = 0;
         actualiseresultline();
     }else{
      
     }
-    if(tgg.length !=0){
+    if(tgg.length !=0){ //Permet de ne pas avoir de bug avec la table, de ne pas supprimer de ligne supplementaire si il n'y en a deja plus, ensuite il calcule pour actualiser les reusultats
         removeLine(-1);
         calcul();
     }else{
@@ -351,7 +351,7 @@ function removeLast(){
 function removeAvLast(){
     tgg = document.getElementsByClassName("totalLine");
     if(tgg.length > 1){
-        removeLine(tgg.length-1);
+        removeLine(tgg.length-1); // Ce test permet de lancer la fonction uniquement si il reste au moins 2 ligne pour pouvoir supprimer celle du dessus (-1), et il calcul() pour actualiser
         calcul();
     }else{
         
