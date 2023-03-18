@@ -341,6 +341,7 @@ function removeLast(){
     }
     if(tgg.length !=0){
         removeLine(-1);
+        calcul();
     }else{
 
     }
@@ -351,6 +352,7 @@ function removeAvLast(){
     tgg = document.getElementsByClassName("totalLine");
     if(tgg.length > 1){
         removeLine(tgg.length-1);
+        calcul();
     }else{
         
     }
