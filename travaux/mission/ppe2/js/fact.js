@@ -174,7 +174,7 @@ function addLine(v){ // Fonction crée pour éviter d'avoir a se répéter pour 
     
     if(test===0){
         test=1;
-
+        console.log("addline =1")
     }else{
 
     }
@@ -334,7 +334,11 @@ function removeLast(){
     }else{
      
     }
-    removeLine(-1);
+    if(tgg.length !=0){
+        removeLine(-1);
+    }else{
+
+    }
     
 }
 
