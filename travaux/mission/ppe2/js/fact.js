@@ -344,10 +344,12 @@ function removeLast(){
     }
     if(listeTt.length !=0){ //Permet de ne pas avoir de bug avec la table, de ne pas supprimer de ligne supplementaire si il n'y en a deja plus, ensuite il calcule pour actualiser les reusultats
         removeLine(-1);
-        if(listeTt[0].value!=0 && listePrice[0].value!=0 && listeQte[0].value!=0){
-            calcul();
-
+        if(listeTt.length!=0 && listeQte.length!=0 && listePrice.length!=0){
+            if(listeTt[0].value!=0 && listePrice[0].value!=0 && listeQte[0].value!=0){ 
+                calcul();
+            }
         }
+        
         
     }else{
 
