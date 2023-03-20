@@ -409,12 +409,9 @@ function calcul(){
         }
         var totalht = document.getElementById("ht"); // Permet de récuperer l'emplacement dans lequelle il faut mettre le prix ht
         var em = document.getElementById("em"); // Ces deux lignes permettent d'ajouter si il y en a 1 le EXPEDITO MANUTENTION au prix, par le biais de résultat, il sera également par la suite ajouter au prix ttc, au total ht avec remise, ttc, ttc avec remise.
-        if(em!=null){
-            result = result +Number(em.value);
-            totalht.value = result;ptec(); // Attribution du ht a son emplacement dans le code html
-        }else{
-
-        }
+    
+        result = result +Number(em.value);
+        totalht.value = result;ptec(); // Attribution du ht a son emplacement dans le code html
 
 
 
