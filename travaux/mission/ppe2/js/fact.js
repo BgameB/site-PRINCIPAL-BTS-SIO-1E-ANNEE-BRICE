@@ -332,7 +332,7 @@ function removeWantLine(g){ // cela permet de supprimer la ligne qu'on veut, je 
 }
 
 function removeLast(){
-    tgg = document.getElementsByClassName("totalLine");
+    var tgg = document.getElementsByClassName("totalLine");
     if(tgg.length === 1 && test===1){ // pour désactiver la fonction calcul() si il n'y a plus de ligne et retirer les resultats dans les cases a droite
         test = 0;
         actualiseresultline();
@@ -341,7 +341,8 @@ function removeLast(){
     }
     if(tgg.length !=0){ //Permet de ne pas avoir de bug avec la table, de ne pas supprimer de ligne supplementaire si il n'y en a deja plus, ensuite il calcule pour actualiser les reusultats
         removeLine(-1);
-        calcul();
+            calcul();
+        
     }else{
 
     }
