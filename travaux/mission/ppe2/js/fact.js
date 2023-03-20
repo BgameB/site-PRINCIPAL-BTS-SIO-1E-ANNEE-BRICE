@@ -332,16 +332,22 @@ function removeWantLine(g){ // cela permet de supprimer la ligne qu'on veut, je 
 }
 
 function removeLast(){
-    var tgg = document.getElementsByClassName("totalLine");
-    if(tgg.length === 1 && test===1){ // pour désactiver la fonction calcul() si il n'y a plus de ligne et retirer les resultats dans les cases a droite
+
+    var listePrice = document.getElementsByClassName("price");
+    var listeTt = document.getElementsByClassName("totalLine");
+    var listeQte = document.getElementsByClassName("qte");
+    if(listeTt.length === 1 && test===1){ // pour désactiver la fonction calcul() si il n'y a plus de ligne et retirer les resultats dans les cases a droite
         test = 0;
         actualiseresultline();
     }else{
      
     }
-    if(tgg.length !=0){ //Permet de ne pas avoir de bug avec la table, de ne pas supprimer de ligne supplementaire si il n'y en a deja plus, ensuite il calcule pour actualiser les reusultats
+    if(listeTt.length !=0){ //Permet de ne pas avoir de bug avec la table, de ne pas supprimer de ligne supplementaire si il n'y en a deja plus, ensuite il calcule pour actualiser les reusultats
         removeLine(-1);
+        if(listeTt[0].value!=0 && listePrice[0].value!=0 && listeQte[0].value!=0){
             calcul();
+
+        }
         
     }else{
 
@@ -350,10 +356,16 @@ function removeLast(){
 }
 
 function removeAvLast(){
-    var tgg = document.getElementsByClassName("totalLine");
-    if(tgg.length > 1){
-        removeLine(tgg.length-1); // Ce test permet de lancer la fonction uniquement si il reste au moins 2 ligne pour pouvoir supprimer celle du dessus (-1), et il calcul() pour actualiser
-        calcul();
+    var listePrice = document.getElementsByClassName("price");
+    var listeTt = document.getElementsByClassName("totalLine");
+    var listeQte = document.getElementsByClassName("qte");
+    if(listeTt.length > 1){
+        removeLine(listeTt.length-1); // Ce test permet de lancer la fonction uniquement si il reste au moins 2 ligne pour pouvoir supprimer celle du dessus (-1), et il calcul() pour actualiser
+        if(listeTt[0].value!=0 && listePrice[0].value!=0 && listeQte[0].value!=0){
+            calcul();
+
+        }
+
     }else{
         
     }
