@@ -350,7 +350,7 @@ function removeLast(){
 }
 
 function removeAvLast(){
-    tgg = document.getElementsByClassName("totalLine");
+    var tgg = document.getElementsByClassName("totalLine");
     if(tgg.length > 1){
         removeLine(tgg.length-1); // Ce test permet de lancer la fonction uniquement si il reste au moins 2 ligne pour pouvoir supprimer celle du dessus (-1), et il calcul() pour actualiser
         calcul();
