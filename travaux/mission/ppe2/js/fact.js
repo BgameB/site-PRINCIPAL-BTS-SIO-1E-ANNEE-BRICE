@@ -11,6 +11,40 @@ function fillstr(tab,liste){
     }ptec();
 }
 
+// Ne fonctionne pas 
+// function testIfNull(){ // (elle fonctionne uniquement quand les inputs sont vide, et lorsque j'en met 1, la fonction fonctionne 1 fois et ensuite elle ne lit plus la boucle for), JE SUIS EN TRAIN DE LA CORRIGER, ELLE ME PERMETTRAIT DE TESTER SI MON TABLEAU D'INPUT (desc,qte,totalLne) EST VIDE. SI IL EST VIDE, DANS LA FONCTION removeLast() et removeAvLast() N'EXECUTE PAS LA FONCTION calcul() Sinon, elle l'execute afin de mettre à jour les informations
+//     var listeprice = document.getElementsByClassName("price");
+//     var listett = document.getElementsByClassName("totalLine");
+//     var listeqte = document.getElementsByClassName("qte");
+//     var testtest = listett.length;
+//     var tsst = 0;
+//     console.log("Avant la contion")
+//     for (let i = 0; i < testtest; i++) { // Pour calculer chaque ligne, donc la quantité * le prix de chaque ligne et ensuite on l'attribu dans la case ht
+//         if (listett[i].value === '' && listeqte[i].value === '' && listeprice[i].value === ''){
+//             var listeprice = document.getElementsByClassName("price");
+//         var listett = document.getElementsByClassName("totalLine");
+//         var listeqte = document.getElementsByClassName("qte");
+        
+        
+//             tsst += 1;
+//             console.log("pendant la fonction ")
+//             console.log(tsst,testtest);
+//         }else{
+//         }
+//         }
+
+//         if(tsst==testtest){
+//             console.log("TRUE",tsst,testtest);
+//             return true;
+                
+//         }else{
+//             console.log("FALSE",tsst,testtest);
+//             return false;
+                
+//         }
+   
+// }
+
 function fillRandomIntAddCalcul(quantifier1,quantifier2,liste1,liste2,listetotal){
     let size = liste1.length;
     for (i = 0; i < size ; i++){
@@ -274,7 +308,7 @@ function addLineAll(){
 //         }
         
 //     } ptec();
-// } CECI EST UNE ANCIENNE FONCTION 
+// } //CECI EST UNE ANCIENNE FONCTION 
 
 function removeLine(k){
     tgg = document.getElementsByClassName("totalLine"); // fonction principal que l'on va utiliser pour toute les intéraction on l'on va supprimer des lignes
