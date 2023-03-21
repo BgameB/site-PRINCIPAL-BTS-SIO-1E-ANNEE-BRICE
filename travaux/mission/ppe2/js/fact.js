@@ -1,6 +1,6 @@
 let test = 1;
 let ntest = "by Verger--Doucy Brice 1btssiobt facture © 2023";
-let ntestw = "by Verger--Doucy Brice 1btssiobt facture © last update 18/03/2023 16:15";
+let ntestw = "by Verger--Doucy Brice 1btssiobt facture © last update 20/03/2023 16:00";
 function fillstr(tab,liste){ 
     //// Il mélange ce qu'il y a dans la liste tabDesc et attribu le résultat a iDesc
     //il affiche la description contenu dans iVar dans la case associer au input "liste" du html ,via la variable liste et la position i
