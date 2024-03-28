@@ -125,6 +125,11 @@ nav li:hover .submenu{
 	border-top: 5px solid rgb(128,128,128);
 	background-color: RGBa(220, 220, 220, 0.15);
 }
+
+.menu-veilletechnologique:hover{
+	border-top: 5px solid rgb(139, 7, 121);
+	background-color: RGBa(220, 220, 220, 0.15);
+}
 /* fin des bandes au top des boutons */
 nav > ul > li:hover a{
 	padding: 15px 30px 20px 30px;
@@ -194,6 +199,14 @@ nav > ul > li:hover a{
 	background-color: rgb(215, 214, 214);
 }
 
+.menu-veilletechnologique .submenu li:hover{
+	background-color: rgb(255, 0, 221);
+}
+
 .menu-presentation .submenu{
 	background-color: rgb(128,128,128);
+}
+
+.menu-veilletechnologique .submenu{
+	background-color: rgb(183, 12, 163);
 }
